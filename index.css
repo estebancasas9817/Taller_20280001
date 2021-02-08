@@ -1,0 +1,273 @@
+/* ======== RESETEO ======== */
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  padding: 3rem;
+}
+
+/* ========= HEADER ========= */
+
+.header {
+  background-image: linear-gradient(
+      90deg,
+      rgba(10, 1, 43, 0.5) 0%,
+      rgba(0, 0, 87, 0.5) 63%
+    ),
+    url(img/local.jpg);
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tituloPrimario {
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation: animacionTituloPrimario 1s ease-out;
+}
+
+@keyframes animacionTituloPrimario {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.subtituloPrimario {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  font-weight: 10;
+  animation: animacionTituloSecundario 1s ease-out;
+  margin-bottom: 3rem;
+}
+
+@keyframes animacionTituloSecundario {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.header__item {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 25%;
+  margin-top: 4.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+}
+.header__scroll {
+  margin-top: -1.3rem;
+}
+
+.header__link {
+  animation: animacionSpan 1s ease-in;
+  color: #fff;
+  display: inline-block;
+}
+.header__link:hover {
+  transform: scale(1.1);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+@keyframes animacionSpan {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ======= NOSOTROS ======= */
+.nosotros {
+  padding: 20rem 0;
+  margin-top: -20vh;
+  background-color: #e8e7e7;
+}
+
+/* =========== SERVICIOS ============= */
+
+.servicios {
+  padding: 15rem 0;
+  transform: skewY(7deg);
+  background-color: #f2f2f2;
+  margin-top: -10rem;
+}
+
+.rotar {
+  transform: skewY(-7deg);
+}
+
+/* ======= CONTACTO ======= */
+.contacto {
+  padding: 25rem 0 10rem 0;
+  background-color: #e8e7e7;
+  margin-top: -10rem;
+}
+
+/* ======GLOBAL */
+
+.fila {
+  margin: 0px auto;
+  max-width: 114rem;
+  padding-bottom: 10rem;
+}
+.fila:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.fila::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+.col:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.col-1-de-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.tituloTerciario {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.texto--global {
+  color: #171819;
+  line-height: 3rem;
+}
+
+.fotos {
+  width: 55%;
+  display: inline-block;
+  position: absolute;
+  outline-offset: 2rem;
+  z-index: 10;
+  box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, 40%);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  background-blend-mode: screen;
+}
+
+.fotos:hover {
+  outline: 1.5rem solid rgb(0, 0, 87);
+  z-index: 20;
+}
+
+.box--global {
+  text-align: center;
+}
+.btn--global {
+  color: #d6dced;
+  margin-top: 5rem;
+  background-color: #000057;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+}
+
+.btn--global:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.btn--global:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.1rem);
+}
+
+.titulo--global {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.tituloSecundario {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  color: #000057;
+  font-weight: 300;
+}
+.tituloSecundario:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.box--fotos--global {
+  position: relative;
+}
+
+.nosotros__img--1,
+.contacto__img--1,
+.servicios__img--1 {
+  top: 0;
+  left: 0;
+}
+
+.nosotros__img--2,
+.contacto__img--2,
+.servicios__img--2 {
+  top: 4rem;
+  left: 45%;
+}
+
+.nosotros__img--3,
+.contacto__img--3,
+.servicios__img--3 {
+  top: 13rem;
+  left: 20%;
+}

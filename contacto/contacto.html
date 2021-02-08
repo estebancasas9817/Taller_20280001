@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav__logo">
+            <h3 class="logo"><a href="../index.html" class="logo__link">Bon apétit</a></h3>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+            <li class="nav__item"><a href="../nosotros/nosotros.html" class="nav__link">Nosotros</a></li>
+            <li class="nav__item"><a href="../servicios/servicios.html" class="nav__link">Servicios</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <div class="contact__header">
+            <h1 class="header">Contacto</h1>
+            <h2 class="subHeader">Habla con nosotros</h2>
+        </div>
+
+        <form action="" class="contact__form">
+            <div class="contact__box">
+                <input type="text" class="contact__name input" placeholder="Nombre" required>
+            <label for="" class="contact__label">Nombre</label>
+            <input type="text" class="contact__apellido input" placeholder="Apellido" required>
+            <label for="" class="contact__label">Apellido</label>
+            <input type="number" class="contact__tel input" placeholder="Teléfono" required>
+            <label for="" class="contact__label">Teléfono</label>
+            <input type="email" class="contact__email input" placeholder="Email" required>
+            <label for="" class="contact__label">Email</label>
+            <textarea name="mensaje" id="" cols="30" rows="10" class="input contact__mensaje" placeholder="Mensaje"></textarea>
+            <label for="" class="contact__label">Mensaje</label>
+            <input type="submit" value="Contactar" class="contact__enviar" >
+            </div>
+            
+        </form>
+    </section>
+
+    <script src="contacto.js"></script>
+</body>
+</html>

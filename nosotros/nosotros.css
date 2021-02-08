@@ -1,0 +1,145 @@
+/* ======== RESETEO ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  padding: 3rem;
+}
+
+/*  ======= NAVIGATION ========= */
+
+.nav {
+  height: 15rem;
+  background-color: #f2f2f2;
+}
+
+.nav__list {
+  float: right;
+  margin-top: 1.3rem;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.nav__item:last-child {
+  margin-right: 7rem;
+}
+.nav__link {
+  text-decoration: none;
+  color: #444;
+  display: inline-block;
+  font-size: 2rem;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+}
+
+.nav__link:hover {
+  border-bottom: 0.1rem solid #5ec576;
+  color: #5ec576;
+}
+
+.nav__logo {
+  float: left;
+  color: #444;
+  font-size: 3rem;
+}
+
+.logo__link {
+  margin-left: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: "Architects Daughter", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  color: #444;
+}
+
+.sectionN {
+  background-color: #f2f2f2;
+  height: 150rem;
+}
+
+.sectionN__header {
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.header {
+  color: #5ec576;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.8rem;
+  margin-right: 29rem;
+  font-weight: 600;
+}
+
+.subHeader {
+  color: #444;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  height: 40rem;
+}
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.composition__photo {
+  width: 75%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 40%);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 40%);
+  border-radius: 2px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.composition__photo--p2 {
+  filter: brightness(60%);
+  border-radius: 2rem;
+}
+
+.composition__photo--p2:hover {
+  filter: brightness(100%);
+}
+
+.tituloTerciario {
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  color: #666;
+}
